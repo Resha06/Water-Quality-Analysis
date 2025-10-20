@@ -1,52 +1,85 @@
-# Water-Quality-Analysis
-This project uses machine learning algorithms like Decision Tree, Random Forest, SVM, Logistic Regression, and AdaBoost to classify water samples as safe or unsafe for consumption based on water quality indicators.
+# 💧 Water Quality (Potability) Analysis
 
-![water gif](https://github.com/user-attachments/assets/98b02ab2-b2a4-48b2-84ee-59e63052af95)
+This project analyzes the **Water Potability Dataset**, which contains **3,276 samples** of water quality data.  
+The goal is to determine whether water is **safe (potable)** or **unsafe (non-potable)** for human consumption based on various chemical and physical parameters.
 
+---
 
-💧 Water Quality Analysis – Understanding the Potability of Water
+## 📊 About the Dataset
 
-Have you ever wondered what makes water truly safe to drink?
-This dataset dives deep into the factors that determine water quality and potability, offering real-world measurements from thousands of water samples.
+**Dataset Name:** Water Potability Dataset  
+**File Name:** `Water Potability Dataset.csv`  
+**Total Samples:** 3,276  
+**Total Features:** 10  
+**Target Column:** `Potability` (1 = Safe to Drink, 0 = Not Safe)
 
-📊 About the Dataset
-This dataset contains 3,276 water samples, each evaluated using 9 key physicochemical parameters such as pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, and turbidity.
-The final column, Potability, indicates whether the water is safe (1) or unsafe (0) for drinking.
+This dataset helps assess the safety of water by analyzing its chemical composition and physical characteristics.  
+It can be used for **data analysis**, **machine learning**, and **environmental research** to understand the key factors that affect water quality.
 
-🌱 Purpose & Insights
-This project aims to analyze the quality of water and understand how various factors influence its potability.
-By exploring relationships between chemical indicators and potability, we can gain insights into:
+---
 
-How pH levels and hardness affect water safety.
+### 🧪 Features and Descriptions
 
-Which factors contribute most to contamination.
+| Feature | Description |
+|----------|--------------|
+| **ph** | pH value of the water, indicates acidity or alkalinity (0–14 scale) |
+| **Hardness** | Amount of dissolved calcium and magnesium in mg/L |
+| **Solids** | Total dissolved solids in ppm (parts per million) |
+| **Chloramines** | Amount of chloramine (disinfectant) in ppm |
+| **Sulfate** | Sulfate concentration in mg/L |
+| **Conductivity** | Electrical conductivity of water in μS/cm |
+| **Organic_carbon** | Amount of organic carbon in ppm |
+| **Trihalomethanes** | Concentration of trihalomethanes (chemical compounds) in μg/L |
+| **Turbidity** | Measure of light scattering in water (NTU) |
+| **Potability** | 1 = Potable (safe for drinking), 0 = Not potable (unsafe) |
 
-Patterns and correlations that distinguish drinkable from non-drinkable water.
+---
 
-🧠 Applications & Use Cases
-This dataset is ideal for:
+## 🎯 Objectives
 
-Exploratory Data Analysis (EDA) – understanding trends and distributions of water quality parameters.
+- Analyze and visualize the water quality parameters  
+- Handle missing values and outliers effectively  
+- Study correlations between features and potability  
+- Build machine learning models to **predict water potability**  
+- Identify the most influential factors affecting water safety  
 
-Data Visualization – building dashboards showing water safety by parameter or location.
+---
 
-Machine Learning Models – predicting whether water is potable using classification algorithms.
+## 🧠 Tools & Technologies
 
-Environmental Studies – assessing how water quality varies across different conditions or regions.
+- **Python**  
+- **Pandas** – Data manipulation  
+- **NumPy** – Numerical operations  
+- **Matplotlib / Seaborn** – Data visualization  
+- **Scikit-learn** – Machine learning models and evaluation  
+- **Jupyter Notebook / Google Colab** – Analysis environment  
 
-💡 Why It Matters
-Safe drinking water is a fundamental human need.
-Analyzing this data helps raise awareness of water safety standards, supports environmental policy decisions, and inspires innovative purification solutions.
+---
 
-🚀 Project Scope
-With 10 informative columns and 3,276 samples, this dataset provides a rich foundation for:
+## 📈 Key Insights from the Dataset
 
-Data cleaning and preprocessing
+- Around **39%** of the water samples are **potable**.  
+- Missing values exist in **ph (491)**, **Sulfate (781)**, and **Trihalomethanes (162)** columns.  
+- Parameters like **pH**, **Chloramines**, and **Sulfate** strongly influence water potability.  
+- The dataset is suitable for **binary classification** tasks in machine learning.
 
-Correlation and feature importance analysis
+---
 
-Predictive modeling using logistic regression, random forest, or other classifiers
+## 🚀 Potential Applications
 
-Visual storytelling on global water safety issues
+- Predicting water safety using supervised learning models  
+- Environmental monitoring and public health analysis  
+- Building dashboards for water quality management  
+- Educational projects in data science and environmental studies  
 
-🌍 Dive into the data and uncover how chemical composition shapes the safety of one of Earth’s most vital resources — water.
+---
+
+## 🗂️ File Information
+
+| File Name | Description |
+|------------|-------------|
+| `Water Potability Dataset.csv` | Dataset used for analysis and model building |
+| `water_quality_analysis.ipynb` | Python notebook containing the code |
+| `README.md` | Project documentation |
+
+---
